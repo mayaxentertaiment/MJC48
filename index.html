@@ -45,6 +45,9 @@
   }
   img{max-width:100%;display:block;}
   a{color:inherit;text-decoration:none;}
+  #nd-content a{color:var(--blue);text-decoration:underline;text-underline-offset:2px;}
+  #nd-content a:hover{opacity:0.8;}
+  #nd-content a:visited{color:#551A8B;}
   h1,h2,h3,h4{
     font-family:'Fraunces',serif;
     font-weight:600;
@@ -498,13 +501,15 @@
         <a href="#news" class="section-more" >Lihat semua berita</a>
       </div>
       <div class="news-grid">
-        <a href="#news-detail" onclick="showNews(0)" class="news-item">
-        <span class="tag">TEATER</span>
-        <h4>Selamat Datang Di Website MJC48</h4>
-        <span class="date">15 September 2026</span>
+        <a href="#news-detail" onclick="showNews(1)" class="news-item">
+        <span class="tag">RECRUITMENT</span>
+        <h4>Open Recruitment Staff MJC48 Resmi Dibuka!</h4>
+        <span class="date">18 September 2026</span>
 </a>
-<a href="#news-detail" onclick="showNews(1)" class="news-item">
-  ...
+<a href="#news-detail" onclick="showNews(0)" class="news-item">
+  <span class="tag">TEATER</span>
+  <h4>Selamat Datang Di Website MJC48</h4>
+  <span class="date">15 September 2026</span>
 </a>
 <a href="#news-detail" onclick="showNews(2)" class="news-item">
   ...
@@ -837,9 +842,9 @@
           <span class="date">15 September 2026</span>
         </a>
         <a href="#news-detail" onclick="showNews(1)" class="news-item">
-          <span class="tag">TRAINEE</span>
-          <h4>-</h4>
-          <span class="date">10 September 2026</span>
+          <span class="tag">RECRUITMENT</span>
+          <h4>Open Recruitment Staff MJC48 Resmi Dibuka!</h4>
+          <span class="date">18 September 2026</span>
         </a>
         <a href="#news-detail" onclick="showNews(2)" class="news-item">
           <span class="tag">EVENT</span>
@@ -997,7 +1002,55 @@ var newsData = [
     img: 'assets/mjc48.webp',
     content: '<p>Paragraf pertama isi berita...</p><p>Paragraf kedua...</p>'
   },
-  // ... index 1 sampai 6, urutannya harus sama persis dengan urutan
+  {
+    tag: 'RECRUITMENT',
+    title: 'Open Recruitment Staff MJC48 Resmi Dibuka!',
+    date: '18 September 2026',
+    img: 'assets/hiring-staff.jpg',
+    content:
+      '<p>MJC48 dengan senang hati membuka <strong>Open Recruitment Staff</strong> untuk teman-teman yang ingin ikut terlibat langsung di balik layar MJC48. Ini kesempatan buat kamu yang mau berkontribusi sekaligus belajar bareng komunitas!</p>' +
+      '<p><strong>Posisi yang dibuka:</strong></p>' +
+
+      '<p><strong>📷 EDITOR PHOTO</strong></p>' +
+      '<ol>' +
+        '<li>Kamu adalah individu yang mahir dalam mengedit dan memanipulasi foto untuk berbagai keperluan.</li>' +
+        '<li>Kamu memiliki kemampuan untuk membuat desain poster yang menarik dan sesuai tema.</li>' +
+        '<li>Kamu bertanggung jawab dalam mendokumentasikan acara dan kegiatan melalui foto.</li>' +
+        '<li>Kamu memastikan kualitas visual yang konsisten di semua platform, terutama Canva.</li>' +
+      '</ol>' +
+
+      '<p><strong>🎬 EDITOR VIDEO</strong></p>' +
+      '<ol>' +
+        '<li>Kamu adalah individu yang mahir dalam mengedit dan memproduksi video untuk berbagai keperluan.</li>' +
+        '<li>Kamu mampu menambahkan efek visual dan audio untuk meningkatkan kualitas video.</li>' +
+        '<li>Kamu memastikan kualitas video yang konsisten di semua platform.</li>' +
+        '<li>Kamu mampu bekerja dengan deadline.</li>' +
+      '</ol>' +
+
+      '<p><strong>🗂️ MANAGER</strong></p>' +
+      '<ol>' +
+        '<li>Kamu adalah individu yang bisa diandalkan.</li>' +
+        '<li>Kamu mampu me-manage semua member dengan baik dan bijak.</li>' +
+        '<li>Kamu memastikan member layak serta nyaman pada saat di MJC48.</li>' +
+        '<li>Kamu mampu bekerja dengan deadline.</li>' +
+        '<li>Kamu mampu mengawasi konten member pada saat sebelum di upload.</li>' +
+        '<li>Kamu bisa membuat jadwal konten, yang akan bekerja sama dengan tim kreatif.</li>' +
+      '</ol>' +
+
+      '<p><strong>✨ TIM KREATIF</strong></p>' +
+      '<ol>' +
+        '<li>Kamu adalah individu yang mampu mengembangkan ide-ide kreatif untuk konten dan acara.</li>' +
+        '<li>Kamu aktif berpartisipasi dalam brainstorming dan perencanaan projek.</li>' +
+        '<li>Kamu memiliki kemampuan untuk menulis naskah atau skrip untuk video atau konten lainnya.</li>' +
+        '<li>Kamu mampu bekerja sama dengan tim lain untuk mewujudkan ide-ide kreatif.</li>' +
+        '<li>Kamu mampu menciptakan ide bukan hanya untuk konten, melainkan juga promosi event/kegiatan yang sedang berlangsung.</li>' +
+      '</ol>' +
+
+      '<p><strong>Periode pendaftaran:</strong> 25 &ndash; 30 September 2026.</p>' +
+      '<p><strong>Cara mendaftar:</strong> isi formulir pendaftaran melalui link berikut: <a href="https://forms.gle/61D5tfFX3q6ZDsFf7" target="_blank" rel="noopener">https://forms.gle/61D5tfFX3q6ZDsFf7</a>. Setelah mendaftar, proses selanjutnya (seleksi berkas, obrolan singkat, hingga pengumuman) akan diinformasikan langsung melalui kontak yang kamu daftarkan.</p>' +
+      '<p>Yuk, jadi bagian dari perjalanan MJC48! Ditunggu pendaftarannya sebelum 30 September 2026. ✨</p>'
+  },
+  // ... index 2 sampai 6, urutannya harus sama persis dengan urutan
   //     onclick="showNews(N)" di Step 2 & Step 3
 ];
 function showNews(id){
