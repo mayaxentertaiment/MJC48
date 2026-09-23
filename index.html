@@ -500,19 +500,11 @@
         <h2>Kabar Terbaru</h2>
         <a href="#news" class="section-more" >Lihat semua berita</a>
       </div>
-      <div class="news-grid">
-        <a href="#news-detail" onclick="showNews(1)" class="news-item">
+      <div class="news-grid" style="grid-template-columns:1fr;max-width:480px;margin:0 auto;">
+        <a href="#news-detail" onclick="showNews(0)" class="news-item">
         <span class="tag">RECRUITMENT</span>
         <h4>Open Recruitment Staff MJC48 Resmi Dibuka!</h4>
         <span class="date">18 September 2026</span>
-</a>
-<a href="#news-detail" onclick="showNews(0)" class="news-item">
-  <span class="tag">TEATER</span>
-  <h4>Selamat Datang Di Website MJC48</h4>
-  <span class="date">15 September 2026</span>
-</a>
-<a href="#news-detail" onclick="showNews(2)" class="news-item">
-  ...
 </a>
       </div>
     </div>
@@ -522,24 +514,10 @@
     <div class="wrap">
       <div class="section-head">
         <h2>Jadwal Panggung</h2>
-        <a href="#news" class="section-more" >Lihat semua</a>
       </div>
-      <div class="sched-list">
-        <a href="#jadwal" class="sched-row">
-          <div><span class="d-num">21</span><span class="d-sub">SEP</span></div>
-          <div><h4>-</h4><span class="venue">Teater MJC48, Panggung Utama</span></div>
-          <span class="badge">19.00 WIB</span>
-        </a>
-        <a href="#jadwal" class="sched-row">
-          <div><span class="d-num">24</span><span class="d-sub">SEP</span></div>
-          <div><h4>-</h4><span class="venue">Teater MJC48, Panggung Utama</span></div>
-          <span class="badge">19.00 WIB</span>
-        </a>
-        <a href="#jadwal" class="sched-row">
-          <div><span class="d-num">27</span><span class="d-sub">SEP</span></div>
-          <div><h4>-</h4><span class="venue">Teater MJC48, Panggung Utama</span></div>
-          <span class="badge">16.00 WIB</span>
-        </a>
+      <div style="text-align:center; padding:56px 20px; border-top:1px solid var(--line);">
+        <p style="font-family:'Fraunces',serif; font-size:22px; font-weight:600;">Coming Soon</p>
+        <p style="margin-top:8px; font-size:14.5px; color:var(--ink-soft);">Jadwal pertunjukan akan segera diumumkan di sini.</p>
       </div>
     </div>
   </div>
@@ -762,7 +740,15 @@
   </div>
 </section>
 <!-- ================= JADWAL PANGGUNG ================= -->
-<section class="page" id="page-jadwal" data-title="Jadwal Panggung — MJC48">
+<section class="page locked" id="page-jadwal" data-title="Jadwal Panggung — MJC48">
+  <div class="coming-soon-block">
+    <div class="coming-soon-inner">
+      <div class="eyebrow-shield">Jadwal Panggung</div>
+      <h1>Coming <em>Soon.</em></h1>
+      <p>Jadwal pertunjukan MJC48 sedang dipersiapkan. Nantikan pengumuman resminya di sini.</p>
+      <a href="#home" class="btn btn-primary">Kembali ke Beranda</a>
+    </div>
+  </div>
   <div class="team-hero">
     <div class="wrap team-hero-inner no-logo">
       <div>
@@ -835,42 +821,15 @@
         <h2>Semua Berita</h2>
         <span class="num">terbaru dulu</span>
       </div>
-      <div class="news-grid">
+      <div class="news-grid" style="grid-template-columns:1fr;max-width:480px;margin:0 auto;">
         <a href="#news-detail" onclick="showNews(0)" class="news-item">
-          <span class="tag">TEATER</span>
-          <h4>-</h4>
-          <span class="date">15 September 2026</span>
-        </a>
-        <a href="#news-detail" onclick="showNews(1)" class="news-item">
           <span class="tag">RECRUITMENT</span>
           <h4>Open Recruitment Staff MJC48 Resmi Dibuka!</h4>
           <span class="date">18 September 2026</span>
         </a>
-        <a href="#news-detail" onclick="showNews(2)" class="news-item">
-          <span class="tag">EVENT</span>
-          <h4>-</h4>
-          <span class="date">3 September 2026</span>
-        </a>
-        <a href="#news-detail" onclick="showNews(3)" class="news-item">
-          <span class="tag">TEATER</span>
-          <h4>-</h4>
-          <span class="date">28 Agustus 2026</span>
-        </a>
-        <a href="#news-detail" onclick="showNews(4)" class="news-item">
-          <span class="tag">MERCH</span>
-          <h4>-</h4>
-          <span class="date">20 Agustus 2026</span>
-        </a>
-        <a href="#news-detail" onclick="showNews(5)" class="news-item">
-          <span class="tag">TEATER</span>
-          <h4>-</h4>
-          <span class="date">12 Agustus 2026</span>
-        </a>
-        <a href="#news-detail" onclick="showNews(6)" class="news-item">
-          <span class="tag">MEDIA</span>
-          <h4>-</h4>
-          <span class="date">5 Agustus 2026</span>
-        </a>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- ================= NEWS DETAIL ================= -->
 <section class="page" id="page-news-detail" data-title="News — MJC48">
@@ -974,9 +933,9 @@
       <div class="footer-links">
         <div class="footer-col">
           <h5>TIM</h5>
-          <a href="#miii">Team MIII</a>
-          <a href="#jii">Team JII</a>
           <a href="#cii">Team CII</a>
+          <a href="#jii">Team JII</a>
+          <a href="#miii">Team MIII</a>
           <a href="#trainee">Trainee</a>
         </div>
         <div class="footer-col">
@@ -995,13 +954,6 @@
 <script>
   var pages = ['home','jadwal','news','news-detail','miii','jii','cii','trainee','member'];
 var newsData = [
-  {
-    tag: 'TEATER',
-    title: 'Team CII Gelar Pertunjukan Teater Perdana Bulan Ini',
-    date: '15 September 2026',
-    img: 'assets/mjc48.webp',
-    content: '<p>Paragraf pertama isi berita...</p><p>Paragraf kedua...</p>'
-  },
   {
     tag: 'RECRUITMENT',
     title: 'Open Recruitment Staff MJC48 Resmi Dibuka!',
@@ -1050,8 +1002,7 @@ var newsData = [
       '<p><strong>Cara mendaftar:</strong> isi formulir pendaftaran melalui link berikut: <a href="https://forms.gle/61D5tfFX3q6ZDsFf7" target="_blank" rel="noopener">https://forms.gle/61D5tfFX3q6ZDsFf7</a>. Setelah mendaftar, proses selanjutnya (seleksi berkas, obrolan singkat, hingga pengumuman) akan diinformasikan langsung melalui kontak yang kamu daftarkan.</p>' +
       '<p>Yuk, jadi bagian dari perjalanan MJC48! Ditunggu pendaftarannya sebelum 30 September 2026. ✨</p>'
   },
-  // ... index 2 sampai 6, urutannya harus sama persis dengan urutan
-  //     onclick="showNews(N)" di Step 2 & Step 3
+  // hanya 1 berita saat ini (index 0) — tambah object baru di sini kalau mau nambah berita lagi
 ];
 function showNews(id){
   var n = newsData[id];
